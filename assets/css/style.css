@@ -804,8 +804,8 @@ body {
 
 .go-top {
   position: fixed;
-  bottom: 15px;
-  right: 30px;
+  bottom: 0px;
+  right: 15px;
   background: var(--viridian-green);
   color: var(--white-1);
   font-size: 20px;
