@@ -487,6 +487,12 @@ body {
 
 .popular-card .card-location { color: var(--spanish-gray); }
 
+.popular-card {
+  transition: .4s;
+}
+.popular-card:hover {
+  transform: translateY(-20px);
+}
 
 
 
