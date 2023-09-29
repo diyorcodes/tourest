@@ -333,6 +333,12 @@ body {
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
+#navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 
 .header {
   background: var(--viridian-green);
@@ -340,7 +346,7 @@ body {
   height: 88px;
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
-  
+  z-index: 999;
 }
 
 .header.active {
@@ -408,7 +414,9 @@ body {
 }
 
 
-
+main {
+  margin-top: 8rem;
+}
 
 
 /*-----------------------------------*\
