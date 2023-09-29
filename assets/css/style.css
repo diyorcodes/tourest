@@ -340,6 +340,7 @@ body {
   height: 88px;
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
+  
 }
 
 .header.active {
