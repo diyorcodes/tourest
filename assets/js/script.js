@@ -1,10 +1,7 @@
 'use strict';
 
 
-/**
- * navbar toggle
- */
-
+/*============== NAVBAR TOGGLE ===============*/
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const header = document.querySelector("[data-header]");
 
@@ -14,11 +11,7 @@ navToggleBtn.addEventListener("click", function () {
 });
 
 
-
-/**
- * show go top btn when scroll window to 500px
- */
-
+/*=============== show go top btn when scroll window to 500px ===============*/
 const goTopBtn = document.querySelector("[data-go-top]");
 
 window.addEventListener("scroll", function () {
