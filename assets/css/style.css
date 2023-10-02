@@ -1,15 +1,8 @@
 
-/*=============== copyright 2022 codewithsadee ===============*/
-
-
 /*=============== CUSTOM PROPERTY ===============*/
 
 :root {
-
-  /**
-   * colors
-   */
-
+  /*=============== COLOR ===============*/
   --battleship-gray: hsl(0, 0%, 53%);
   --viridian-green: hsl(180, 98%, 31%);
   --silver-chalice: hsl(0, 0%, 69%);
@@ -26,10 +19,7 @@
   --black: hsl(0, 0%, 0%);
   --jet: hsl(0, 0%, 20%);
 
-  /**
-   * typography
-   */
-
+  /*=============== TYPOGRAHY ===============*/
   --ff-abril-fatface: 'Abril Fatface', cursive;
   --ff-comforter-brush: 'Comforter Brush', cursive;
   --ff-heebo: 'Heebo', sans-serif;
@@ -48,33 +38,20 @@
   --fw-600: 600;
   --fw-700: 700;
 
-  /**
-   * border radius
-   */
-
+  /* border radius */
   --radius-6: 6px;
 
-  /**
-   * spacing
-   */
-
+  /* spacing */
   --section-padding: 40px;
 
-  /**
-   * transition
-   */
-
+  /* transition */
   --transition-1: 0.15s ease;
   --transition-2: 0.35s ease;
   --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02);
-
 }
 
 
-
 /*=============== RESET ===============*/
-
-
 *,
 *::before,
 *::after {
@@ -155,13 +132,7 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
-
+/*=============== REUSED STYLE ===============*/
 .container {
   padding-inline: 15px;
 }
@@ -314,10 +285,7 @@ body {
 }
 
 
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
+/*=============== HEADRE ===============*/
 #navigation {
   position: fixed;
   top: 0;
@@ -403,11 +371,7 @@ main {
   margin-top: 8rem;
 }
 
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
+/*=============== HERO ===============*/
 .shape {
   display: none;
 }
@@ -449,10 +413,7 @@ main {
 }
 
 
-/*-----------------------------------*\
-  #DESTINATION
-\*-----------------------------------*/
-
+/*=============== DESTINATION ===============*/
 .destination .section-subtitle {
   text-align: center;
   margin-bottom: 15px;
@@ -511,11 +472,7 @@ main {
 }
 
 
-
-/*-----------------------------------*\
-  #POPULAR
-\*-----------------------------------*/
-
+/*=============== POPULAR ===============*/
 .popular-card :is(.card-price, .card-rating) {
   color: var(--white-1);
   font-size: var(--fs-8);
@@ -555,12 +512,7 @@ main {
 }
 
 
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
+/*=============== ABOUT ===============*/
 .about-content {
   margin-bottom: 50px;
 }
@@ -612,11 +564,7 @@ main {
 }
 
 
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
+/*=============== BLOG ===============*/
 .blog {
   padding-bottom: 100px;
 }
@@ -664,11 +612,7 @@ main {
 }
 
 
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
+/*=============== FOOTER ===============*/
 .footer {
   background-color: var(--oxford-blue);
   background-repeat: no-repeat;
@@ -782,12 +726,7 @@ main {
 }
 
 
-
-/*-----------------------------------*\
-  #GO TO TOP
-\*-----------------------------------*/
-
-
+/*=============== GO TO TOP ===============*/
 .go-top {
   position: fixed;
   bottom: 0px;
@@ -813,71 +752,41 @@ main {
 }
 
 
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
+/*=============== RESPONSIVE ===============*/
 
-/**
- * responsive for larger than 575px screen 
- */
+/* responsive for larger than 575px screen  */
 
 @media (min-width: 575px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
+  /* CUSTOM PROPERTY */
+   
   :root {
 
-    /**
-     * typography
-     */
-
+    /* typography */
+    
     --fs-1: 5rem;
     --fs-3: 4rem;
     --fs-8: 1.4rem;
-
   }
 
-
-
-  /**
-   * HERO
-   */
-
+  /* HERO */
   .hero-text {
     --fs-7: 1.8rem;
   }
 
-
-
-  /**
-   * FOOTER
-   */
-
+  /* FOOTER */
   .footer-top {
     grid-template-columns: 1fr 1fr;
   }
 
 }
 
-/*=============== SCROLL BAR ===============*/
 
-
-
-
-
-
-/**
- * responsive for larger than 768px screen 
- */
+/* responsive for larger than 768px screen  */
 
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+  /* REUSED STYLE */
   .container {
     max-width: 750px;
     margin-inline: auto;
@@ -889,17 +798,12 @@ main {
   }
 
 
-
-  /**
-   * HERO
-   */
-
+  /* HERO */
   .hero {
     min-height: 550px;
     display: grid;
     place-items: center;
   }
-
   .hero .container {
     display: flex;
     align-items: center;
@@ -907,35 +811,24 @@ main {
   }
 
 
-
-  /**
-   * DESTINATION
-   */
-
+  /* DESTINATION */
   .destination-list>li {
     width: calc(33.33% - 20px);
   }
-
   .destination-list .w-50 {
     width: calc(50% - 20px);
   }
 
 
-
-  /**
-   * FOOTER
-   */
-
+  /* FOOTER */
   .footer {
     --fs-7: 1.6rem;
   }
-
   .footer-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
   .footer-bottom .logo,
   .copyright {
     margin-bottom: 0;
@@ -944,39 +837,24 @@ main {
 }
 
 
-/**
- * responsive for larger than 992px screen 
- */
+/* responsive for larger than 992px screen  */
 
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  /* CUSTOM PROPERTY */
 
   :root {
 
-    /**
-     * typography
-     */
-
+    /* typography */
     --fs-2: 3.5rem;
     --fs-3: 4.4rem;
 
-    /**
-     * spacing
-     */
-
+    /* spacing */
     --section-padding: 60px;
-
   }
 
 
-
-  /**
-   * REUSED STYLE
-   */
-
+  /* REUSED STYLE */
   .container {
     max-width: 980px;
   }
@@ -987,11 +865,7 @@ main {
   }
 
 
-
-  /**
-   * HEADER
-   */
-
+  /* HEADER */
   .nav-toggle-btn {
     display: none;
   }
@@ -1022,16 +896,11 @@ main {
   }
 
 
-
-  /**
-   * HERO
-   */
-
+  /* HERO */
   .hero {
     position: relative;
     min-height: 680px;
   }
-
   .hero-title,
   .hero-text {
     margin-bottom: 35px;
@@ -1042,23 +911,21 @@ main {
     position: absolute;
     animation: rotate 8s linear infinite;
   }
-
   .shape-1 {
     top: 60px;
     left: 47%;
   }
-
   .shape-2 {
     top: 20%;
     right: 50px;
     animation-delay: 0.25s;
   }
-
   .shape-3 {
     left: 40%;
     bottom: 20%;
     animation-delay: 0.5s;
   }
+
 
   @keyframes rotate {
     0% {
@@ -1071,39 +938,26 @@ main {
   }
 
 
-
-  /**
-   * DESTINATION
-   */
-
+  /* DESTINATION */
   .destination {
     --fs-4: 3.2rem;
     --fs-5: 2.6rem;
   }
 
 
-
-  /**
-   * ABOUT
-   */
-
+  /* ABOUT */
   .about .container {
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     align-items: center;
     gap: 30px;
   }
-
   .about-content {
     margin-bottom: 0;
   }
 
 
-
-  /**
-   * FOOTER
-   */
-
+  /* FOOTER */
   .footer-top {
     grid-template-columns: 1fr 1fr 1fr 2fr;
   }
@@ -1111,33 +965,20 @@ main {
 }
 
 
-
-/**
- * responsive for larger than 1200px screen 
- */
-
+/* responsive for larger than 1200px screen  */
+ 
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
+  /* CUSTOM PROPERTY */
+  
   :root {
 
-    /**
-     * typography
-     */
-
+    /* typography */
     --fs-1: 6rem;
-
   }
 
 
-
-  /**
-   * REUSED STYLE
-   */
-
+  /* REUSED STYLE */
   .container {
     max-width: 1150px;
   }
@@ -1147,21 +988,13 @@ main {
   }
 
 
-
-  /**
-   * HEADER
-   */
-
+  /* HEADER */
   .navbar-list {
     gap: 50px;
   }
 
 
-
-  /**
-   * ABOUT
-   */
-
+  /* ABOUT */
   .about .container {
     grid-template-columns: 0.7fr 1fr;
   }
