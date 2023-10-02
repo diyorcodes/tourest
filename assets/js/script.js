@@ -1,6 +1,5 @@
 'use strict';
 
-
 /*============== NAVBAR TOGGLE ===============*/
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const header = document.querySelector("[data-header]");
